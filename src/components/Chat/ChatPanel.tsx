@@ -25,8 +25,14 @@ interface ChatPanelProps {
 type PanelSize = 'small' | 'medium' | 'large';
 
 // API Configuration
-const API_URL = 'https://ai-rative-book-backend-production.up.railway.app';
-const API_KEY = 'fwnelrjrl2ur08d9s0fsdhf90324h30493';
+let API_URL = 'web-production-eb560.up.railway.app';
+
+// Agar browser mein 'localhost' likha hai, to Local Backend use karo
+if (typeof window !== 'undefined' && window.location.hostname === 'localhost') {
+  API_URL = 'http://localhost:8000';
+}
+
+const API_KEY = 'areesha123';
 
 // Regex to detect redirect commands in response
 const REDIRECT_REGEX = /\[\[REDIRECT:([^\]]+)\]\]/;

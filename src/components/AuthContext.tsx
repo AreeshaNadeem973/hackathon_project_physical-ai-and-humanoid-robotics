@@ -4,7 +4,8 @@ import useIsBrowser from '@docusaurus/useIsBrowser';
 import { JSX } from 'react/jsx-runtime';
 
 // API Configuration
-const API_URL = 'https://ai-rative-book-backend-production.up.railway.app/api';
+const API_URL = 'web-production-eb560.up.railway.app';
+const API_KEY = 'areesha123'
 
 // Helper function for mobile-friendly fetch with timeout
 async function fetchWithTimeout(
